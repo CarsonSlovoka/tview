@@ -1,7 +1,7 @@
 /*
 A presentation of the tview package, implemented with tview.
 
-Navigation
+# Navigation
 
 The presentation will advance to the next slide when the primitive demonstrated
 in the current slide is left (usually by hitting Enter or Escape). Additionally,
@@ -30,6 +30,7 @@ var app = tview.NewApplication()
 
 // Starting point for the presentation.
 func main() {
+	// 您看到的所有幻燈片內容，都集中在這幾個項目之中
 	// The presentation slides.
 	slides := []Slide{
 		Cover,

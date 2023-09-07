@@ -30,6 +30,8 @@ To add this package to your project:
 go get github.com/rivo/tview
 ```
 
+> 入門建議[demos/presentation/main.go](demos/presentation/main.go)
+
 ## Hello World
 
 This basic example creates a box titled "Hello, World!" and displays it in your terminal:

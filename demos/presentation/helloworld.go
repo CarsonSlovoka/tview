@@ -21,11 +21,14 @@ const helloWorld = `[green]package[white] main
 }`
 
 // HelloWorld shows a simple "Hello world" example.
-func HelloWorld(nextSlide func()) (title string, content tview.Primitive) {
+func HelloWorld(nextSlide func()) (title string,
+	content tview.Primitive,
+) {
 	// We use a text view because we want to capture keyboard input.
 	textView := tview.NewTextView().SetDoneFunc(func(key tcell.Key) {
 		nextSlide()
 	})
 	textView.SetBorder(true).SetTitle("Hello, world!")
-	return "Hello, world", Code(textView, 30, 10, helloWorld)
+	return "Hello, world",
+		Code(textView, 30, 10, helloWorld) // 右側會看到的原始代碼
 }
